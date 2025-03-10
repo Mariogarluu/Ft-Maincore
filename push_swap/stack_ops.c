@@ -1,29 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   stack_ops.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marioga2 <marioga2@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/07 11:53:17 by marioga2          #+#    #+#             */
-/*   Updated: 2025/01/17 13:32:19 by marioga2         ###   ########.fr       */
+/*   Created: 2025/03/10 13:14:21 by marioga2          #+#    #+#             */
+/*   Updated: 2025/03/10 13:15:42 by marioga2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE_H
-# define GET_NEXT_LINE_H
+#include "push_swap.h"
 
-# include <stdlib.h>
-# include <unistd.h>
+void	init_stacks(t_stacks *stacks, int argc, char **argv)
+{
+    int i;
 
-# ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 42
-# endif
+    stacks->stack_a = NULL;
+    stacks->stack_b = NULL;
+    i = 1;
+    while (i < argc)
+    {
+        t_list *new_node = ft_lstnew(ft_itoa(ft_atoi(argv[i])));
+        ft_lstadd_back(&stacks->stack_a, new_node);
+        i++;
+    }
+}
 
-char	*get_next_line(int fd);
-char	*ft_strjoin(char const *s1, char const *s2);
-char	*ft_strdup(const char *s1);
-size_t	ft_strlen(const char *s);
-char	*ft_strchr(const char *s, int c);
-
-#endif

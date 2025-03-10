@@ -6,7 +6,7 @@
 #    By: marioga2 <marioga2@student.42malaga.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/12/16 12:27:41 by marioga2          #+#    #+#              #
-#    Updated: 2024/12/19 15:43:58 by marioga2         ###   ########.fr        #
+#    Updated: 2024/12/23 11:24:58 by marioga2         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ RM = rm -f
 
 SRC = ft_is.c ft_itoa.c ft_malloc.c ft_mem.c ft_mem_2.c \
       ft_put.c ft_split.c ft_str.c ft_str_2.c ft_str_3.c ft_str_4.c ft_miss.c
-BONUS_SRCS = ft_lst.c ft_lst_2.c
+BONUS_SRCS = ft_lst_bonus.c ft_lst_2_bonus.c
 
 OBJ = $(SRC:.c=.o)
 BONUS_OBJS = $(BONUS_SRCS:.c=.o)
