@@ -1,3 +1,0 @@
-make
-cc test_main.c libftprintf.a -o test_main
-./test_main

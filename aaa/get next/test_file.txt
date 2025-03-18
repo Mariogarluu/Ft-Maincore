@@ -1,5 +1,0 @@
-Primera línea del archivo.
-Segunda línea con más contenido.
-Tercera línea es esta.
-Cuarta línea sin más.
-Última línea sin salto final
