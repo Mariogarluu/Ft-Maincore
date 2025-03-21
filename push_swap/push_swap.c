@@ -313,8 +313,7 @@ void	sort_large(t_stacks *stacks)
         // Insertar en A
         pa(stacks);
     }
-    
-    // Ajustar A para que el mínimo esté arriba
+
     min_pos = get_position(stacks->stack_a, get_min(stacks->stack_a));
     move_top_a(stacks, min_pos, stack_size(stacks->stack_a));
 }
