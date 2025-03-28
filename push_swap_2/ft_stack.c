@@ -1,38 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_stack.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marioga2 <marioga2@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/24 14:15:20 by marioga2          #+#    #+#             */
-/*   Updated: 2025/03/24 14:15:20 by marioga2         ###   ########.fr       */
+/*   Created: 2025/03/28 12:19:24 by marioga2          #+#    #+#             */
+/*   Updated: 2025/03/28 12:19:24 by marioga2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-
-int	main(int argc, char **argv)
+void	stack_init(t_stack_node **a, char **argv, bool flag_argc_2)
 {
-	t_stack_node	*a;
-	t_stack_node	*b;
+	long	nbr;
+	int		i;
 
-	a = NULL;
-	b = NULL;
-	if (1 == argc || (2 == argc && !argv[1][0]))
-		return (1);
-	else if (2 == argc)
-		argv = ft_split(argv[1], ' ');
-	stack_init(&a, argv + 1, 2 == argc);
-	if (!stack_sorted(a))
+	i = 0;
+	while (argv[i])
 	{
-		if (stack_len(a) == 2)
-			sa(&a, false);
-		else if (stack_len(a) == 3)
-			tiny_sort(&a);
-		else
-			push_swap(&a, &b);
+		if (error_syntax(argv[i]))
+			error_free(a, argv, flag_argc_2);
+		nbr = ft_atol(argv[i]);
+		if (nbr > INT_MAX || nbr < INT_MIN)
+			error_free(a, argv, flag_argc_2);
+		if (error_repetition(*a, (int)nbr))
+			error_free(a, argv, flag_argc_2);
+		append_node(a, (int)nbr);
+		++i;
 	}
-	free_stack(&a);
+	if (flag_argc_2)
+		free_matrix(argv);
 }
+

@@ -12,46 +12,58 @@
 
 #include "push_swap.h"
 
-void swap(t_stack_node **stack)
+bool	stack_sorted(t_stack_node *stack)
 {
-    if (!stack || !*stack || !(*stack)->next)
-        return;
-    t_stack_node *first = *stack;
-    t_stack_node *second = first->next;
-    first->next = second->next;
-    if (second->next)
-        second->next->prev = first;
-    second->prev = NULL;
-    second->next = first;
-    first->prev = second;
-    *stack = second;
+	if (NULL == stack)
+		return (1);
+	while (stack->next)
+	{
+		if (stack->value > stack->next->value)
+			return (false);
+		stack = stack->next;
+	}
+	return (true);
 }
 
-void sort_stack(t_stack_node **stack)
+static t_stack_node	*find_highest(t_stack_node *stack)
 {
-    if (!stack || !*stack)
-        return;
-    bool sorted;
-    do
-    {
-        sorted = true;
-        t_stack_node *current = *stack;
-        while (current->next)
-        {
-            if (current->value > current->next->value)
-            {
-                int temp = current->value;
-                current->value = current->next->value;
-                current->next->value = temp;
-                sorted = false;
-            }
-            current = current->next;
-        }
-    } while (!sorted);
+	int				highest;
+	t_stack_node	*highest_node;
+
+	if (NULL == stack)
+		return (NULL);
+	highest = INT_MIN;
+	while (stack)
+	{
+		if (stack->value > highest)
+		{
+			highest = stack->value;
+			highest_node = stack;
+		}
+		stack = stack->next;
+	}
+	return (highest_node);
 }
 
-void sort(t_stack_node **stack_a, t_stack_node **stack_b)
+void	tiny_sort(t_stack_node **a)
 {
-    (void)stack_b;
-    sort_stack(stack_a);
+	t_stack_node	*highest_node;
+
+	highest_node = find_highest(*a);
+	if (*a == highest_node)
+		ra(a, false);
+	else if ((*a)->next == highest_node)
+		rra(a, false);
+	if ((*a)->value > (*a)->next->value)
+		sa(a, false);
+}
+
+void	handle_five(t_stack_node **a, t_stack_node **b)
+{
+	while (stack_len(*a) > 3)
+	{
+		init_nodes(*a, *b);
+		finish_rotation(a, find_smallest(*a), 'a');
+		pb(b, a, false);
+	}
 }
