@@ -6,12 +6,11 @@
 /*   By: marioga2 <marioga2@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/24 14:15:20 by marioga2          #+#    #+#             */
-/*   Updated: 2025/03/24 14:15:20 by marioga2         ###   ########.fr       */
+/*   Updated: 2025/04/08 15:32:41 by marioga2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-
 
 int	main(int argc, char **argv)
 {

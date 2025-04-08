@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/home/marioga2/push-swap",
-      "program": "/home/marioga2/push-swap/build/Debug/outDebug",
+      "cwd": "/home/marioga2/Ft-Maincore/push_swap_2",
+      "program": "/home/marioga2/Ft-Maincore/push_swap_2/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
