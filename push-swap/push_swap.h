@@ -6,19 +6,18 @@
 /*   By: marioga2 <marioga2@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/10 12:11:35 by marioga2          #+#    #+#             */
-/*   Updated: 2025/04/08 15:51:16 by marioga2         ###   ########.fr       */
+/*   Updated: 2025/04/11 13:17:36 by marioga2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PUSH_SWAP_H
 # define PUSH_SWAP_H
 
-# include "./import/ft_printf.h"
 # include <stdlib.h>
 # include <limits.h>
 # include <stdbool.h>
 # include <unistd.h>
-#include <stddef.h>
+# include <stddef.h>
 
 typedef struct s_stack_node
 {

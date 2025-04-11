@@ -6,7 +6,7 @@
 /*   By: marioga2 <marioga2@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/28 12:20:33 by marioga2          #+#    #+#             */
-/*   Updated: 2025/03/28 12:20:33 by marioga2         ###   ########.fr       */
+/*   Updated: 2025/04/11 13:19:29 by marioga2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ t_stack_node	*find_last_node(t_stack_node *head)
 	return (head);
 }
 
-
 void	append_node(t_stack_node **stack, int nbr)
 {
 	t_stack_node	*node;
@@ -34,6 +33,7 @@ void	append_node(t_stack_node **stack, int nbr)
 		return ;
 	node->next = NULL;
 	node->value = nbr;
+	node->cheapest = false;
 	if (NULL == *stack)
 	{
 		*stack = node;

@@ -6,7 +6,7 @@
 /*   By: marioga2 <marioga2@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/28 12:19:24 by marioga2          #+#    #+#             */
-/*   Updated: 2025/04/08 15:51:59 by marioga2         ###   ########.fr       */
+/*   Updated: 2025/04/11 13:18:43 by marioga2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,5 +59,5 @@ void	stack_init(t_stack_node **a, char **argv, bool flag_argc_2)
 		++i;
 	}
 	if (flag_argc_2)
-		free_matrix(argv);
+		return ;
 }

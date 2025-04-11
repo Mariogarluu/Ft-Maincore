@@ -6,7 +6,7 @@
 /*   By: marioga2 <marioga2@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/28 12:49:59 by marioga2          #+#    #+#             */
-/*   Updated: 2025/03/28 12:49:59 by marioga2         ###   ########.fr       */
+/*   Updated: 2025/04/11 13:16:08 by marioga2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,7 +62,6 @@ static void	set_target_node(t_stack_node *a,
 	}
 }
 
-
 void	set_price(t_stack_node *a, t_stack_node *b)
 {
 	int	len_a;
@@ -83,7 +82,6 @@ void	set_price(t_stack_node *a, t_stack_node *b)
 	}
 }
 
-
 void	set_cheapest(t_stack_node *b)
 {
 	long			best_match_value;
@@ -103,7 +101,6 @@ void	set_cheapest(t_stack_node *b)
 	}
 	best_match_node->cheapest = true;
 }
-
 
 void	init_nodes(t_stack_node *a, t_stack_node *b)
 {
