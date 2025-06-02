@@ -6,11 +6,39 @@
 /*   By: marioga2 <marioga2@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/28 12:19:24 by marioga2          #+#    #+#             */
-/*   Updated: 2025/03/28 12:19:24 by marioga2         ###   ########.fr       */
+/*   Updated: 2025/04/11 13:18:43 by marioga2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
+
+static long	ft_atol(const char *str)
+{
+	long	num;
+	int		isneg;
+	int		i;
+
+	num = 0;
+	isneg = 1;
+	i = 0;
+	while (str[i] && (str[i] == ' ' || str[i] == '\t'
+			|| str[i] == '\n' || str[i] == '\r'
+			|| str[i] == '\v' || str[i] == '\f'))
+		i++;
+	if (str[i] == '+')
+		i++;
+	else if (str[i] == '-')
+	{
+		isneg *= -1;
+		i++;
+	}
+	while (str[i] >= '0' && str[i] <= '9')
+	{
+		num = (num * 10) + (str[i] - '0');
+		i++;
+	}
+	return (num * isneg);
+}
 
 void	stack_init(t_stack_node **a, char **argv, bool flag_argc_2)
 {
@@ -31,6 +59,5 @@ void	stack_init(t_stack_node **a, char **argv, bool flag_argc_2)
 		++i;
 	}
 	if (flag_argc_2)
-		free_matrix(argv);
+		return ;
 }
-

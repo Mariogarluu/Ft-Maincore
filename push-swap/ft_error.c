@@ -6,7 +6,7 @@
 /*   By: marioga2 <marioga2@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/28 12:24:21 by marioga2          #+#    #+#             */
-/*   Updated: 2025/03/28 12:24:21 by marioga2         ###   ########.fr       */
+/*   Updated: 2025/04/11 13:16:22 by marioga2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,6 @@ void	free_matrix(char **argv)
 		free(argv[i++]);
 	free(argv - 1);
 }
-
 
 void	free_stack(t_stack_node **stack)
 {
@@ -42,7 +41,6 @@ void	free_stack(t_stack_node **stack)
 	*stack = NULL;
 }
 
-
 void	error_free(t_stack_node **a, char **argv, bool flag_argc_2)
 {
 	free_stack(a);
@@ -51,7 +49,6 @@ void	error_free(t_stack_node **a, char **argv, bool flag_argc_2)
 	write(2, "Error\n", 6);
 	exit(1);
 }
-
 
 int	error_syntax(char *str_nbr)
 {
@@ -70,7 +67,6 @@ int	error_syntax(char *str_nbr)
 	}
 	return (0);
 }
-
 
 int	error_repetition(t_stack_node *a, int nbr)
 {
