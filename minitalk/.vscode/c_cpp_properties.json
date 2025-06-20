@@ -9,7 +9,9 @@
       "cStandard": "${default}",
       "cppStandard": "${default}",
       "intelliSenseMode": "linux-gcc-x64",
-      "compilerArgs": []
+      "compilerArgs": [
+        ""
+      ]
     }
   ],
   "version": 4

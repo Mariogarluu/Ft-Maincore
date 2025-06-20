@@ -6,7 +6,7 @@
 /*   By: marioga2 <marioga2@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/01 16:35:07 by marioga2          #+#    #+#             */
-/*   Updated: 2025/06/20 13:32:05 by marioga2         ###   ########.fr       */
+/*   Updated: 2025/06/20 13:12:47 by marioga2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,7 @@ int	main(int argc, char **argv)
 		ft_putstr_fd("Usage: ./client <PID> <message>\n", STDERR_FILENO);
 		return (EXIT_FAILURE);
 	}
+	ft_printf("__PID: %d\n", getpid());
 	pid = ft_atoi(argv[1]);
 	if (kill(pid, 0) < 0)
 	{
