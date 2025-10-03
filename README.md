@@ -1,37 +1,71 @@
-# Ft-Maincore
+<div align="center">
 
-Repositorio con proyectos del cursus de 42 Málaga realizados por [@marioga2](https://github.com/Mariogarluu).
+# 🚀 Ft-Maincore
+
+### Repositorio con proyectos del cursus de 42 Málaga
+
+[![42 School](https://img.shields.io/badge/42-Málaga-000000?style=for-the-badge&logo=42&logoColor=white)](https://www.42malaga.com/)
+[![Language](https://img.shields.io/badge/Language-C-blue?style=for-the-badge&logo=c)](https://en.wikipedia.org/wiki/C_(programming_language))
+[![Norminette](https://img.shields.io/badge/Norminette-passing-success?style=for-the-badge)](https://github.com/42School/norminette)
+
+Desarrollado por [**@Mariogarluu**](https://github.com/Mariogarluu) | 42 Intra: **marioga2**
+
+</div>
+
+---
 
 ## 📑 Índice
 
-- [Sobre este repositorio](#sobre-este-repositorio)
-- [Proyectos](#proyectos)
-  - [1. Libft](#1-libft)
-  - [2. ft_printf](#2-ft_printf)
-  - [3. get_next_line](#3-get_next_line)
-  - [4. Born2beRoot](#4-born2beroot)
-  - [5. push-swap](#5-push-swap)
-  - [6. minitalk](#6-minitalk)
-  - [7. so_long](#7-so_long)
-  - [8. Exam 02](#8-exam-02)
-- [Compilación](#compilación)
-- [Autor](#autor)
+- [📖 Sobre este repositorio](#-sobre-este-repositorio)
+- [📊 Estado de los Proyectos](#-estado-de-los-proyectos)
+- [💻 Proyectos](#-proyectos)
+  - [1. 📚 Libft](#1--libft)
+  - [2. 🖨️ ft_printf](#2-️-ft_printf)
+  - [3. 📄 get_next_line](#3--get_next_line)
+  - [4. 🖥️ Born2beRoot](#4-️-born2beroot)
+  - [5. 🔄 push-swap](#5--push-swap)
+  - [6. 📡 minitalk](#6--minitalk)
+  - [7. 🎮 so_long](#7--so_long)
+  - [8. 📝 Exam 02](#8--exam-02)
+- [🛠️ Compilación](#️-compilación)
+- [🎯 Habilidades Adquiridas](#-habilidades-adquiridas)
+- [👤 Autor](#-autor)
+- [📄 Licencia](#-licencia)
 
 ---
 
-## Sobre este repositorio
+## 📖 Sobre este repositorio
 
-Este repositorio contiene todos los proyectos desarrollados durante el cursus común de 42 Málaga. Cada proyecto está organizado en su propia carpeta con su código fuente, Makefile y archivos necesarios.
+Este repositorio contiene todos los proyectos desarrollados durante el **cursus común de 42 Málaga**. Cada proyecto está organizado en su propia carpeta con su código fuente, Makefile y archivos necesarios.
+
+El programa de 42 es una **metodología de aprendizaje peer-to-peer** donde los estudiantes aprenden a través de proyectos prácticos sin clases tradicionales.
 
 ---
 
-## Proyectos
+## 📊 Estado de los Proyectos
 
-### 1. Libft
+| Proyecto | Dificultad | Estado | Puntuación |
+|----------|------------|--------|------------|
+| 📚 Libft | ⭐⭐ | ✅ Completado | 125/100 |
+| 🖨️ ft_printf | ⭐⭐ | ✅ Completado | 100/100 |
+| 📄 get_next_line | ⭐⭐ | ✅ Completado | 125/100 |
+| 🖥️ Born2beRoot | ⭐⭐ | ✅ Completado | 125/100 |
+| 🔄 push-swap | ⭐⭐⭐ | ✅ Completado | 125/100 |
+| 📡 minitalk | ⭐⭐ | ✅ Completado | 125/100 |
+| 🎮 so_long | ⭐⭐⭐ | ✅ Completado | 125/100 |
+| 📝 Exam 02 | ⭐⭐ | ✅ Completado | - |
+
+---
+
+## 💻 Proyectos
+
+### 1. 📚 Libft
 
 **Descripción:** Librería de funciones básicas de C que reimplementa funciones estándar de la biblioteca de C y añade funciones adicionales útiles.
 
 **Directorio:** `libft/`
+
+**Dificultad:** ⭐⭐ | **Puntuación:** 125/100
 
 **Funciones incluidas:**
 - Funciones de caracteres: `ft_isalpha`, `ft_isdigit`, `ft_isalnum`, etc.
@@ -53,11 +87,13 @@ make re     # Recompila
 
 ---
 
-### 2. ft_printf
+### 2. 🖨️ ft_printf
 
 **Descripción:** Reimplementación de la función printf de C con soporte para múltiples conversores.
 
 **Directorio:** `ft_printf/`
+
+**Dificultad:** ⭐⭐ | **Puntuación:** 100/100
 
 **Conversores implementados:**
 - `%c` - Carácter
@@ -79,11 +115,13 @@ make re     # Recompila
 
 ---
 
-### 3. get_next_line
+### 3. 📄 get_next_line
 
 **Descripción:** Función que lee una línea de un file descriptor, útil para leer archivos línea por línea.
 
 **Directorio:** `get_next_line/`
+
+**Dificultad:** ⭐⭐ | **Puntuación:** 125/100
 
 **Características:**
 - Lee de cualquier file descriptor
@@ -107,11 +145,13 @@ close(fd);
 
 ---
 
-### 4. Born2beRoot
+### 4. 🖥️ Born2beRoot
 
 **Descripción:** Proyecto de administración de sistemas que implica la configuración de una máquina virtual con Debian.
 
 **Directorio:** `Born2beRoot/`
+
+**Dificultad:** ⭐⭐ | **Puntuación:** 125/100
 
 **Contenido:**
 - `monitoring.sh` - Script de monitorización del sistema
@@ -128,11 +168,13 @@ close(fd);
 
 ---
 
-### 5. push-swap
+### 5. 🔄 push-swap
 
 **Descripción:** Algoritmo de ordenación usando dos pilas con un conjunto limitado de instrucciones.
 
 **Directorio:** `push-swap/`
+
+**Dificultad:** ⭐⭐⭐ | **Puntuación:** 125/100
 
 **Operaciones disponibles:**
 - `sa`, `sb`, `ss` - Swap
@@ -162,11 +204,13 @@ ARG="4 67 3 87 23"; ./push_swap $ARG | ./checker_linux $ARG
 
 ---
 
-### 6. minitalk
+### 6. 📡 minitalk
 
 **Descripción:** Programa de comunicación entre cliente y servidor usando señales UNIX.
 
 **Directorio:** `minitalk/`
+
+**Dificultad:** ⭐⭐ | **Puntuación:** 125/100
 
 **Componentes:**
 - `server` - Servidor que recibe mensajes
@@ -193,11 +237,13 @@ make re     # Recompila
 
 ---
 
-### 7. so_long
+### 7. 🎮 so_long
 
 **Descripción:** Juego 2D simple usando la librería gráfica MiniLibX.
 
 **Directorio:** `so_long/`
+
+**Dificultad:** ⭐⭐⭐ | **Puntuación:** 125/100
 
 **Características:**
 - Juego de laberinto con vista top-down
@@ -229,11 +275,13 @@ make re     # Recompila
 
 ---
 
-### 8. Exam 02
+### 8. 📝 Exam 02
 
 **Descripción:** Soluciones de ejercicios del examen 02 de 42.
 
 **Directorio:** `exam 02/`
+
+**Dificultad:** ⭐⭐
 
 **Estructura:**
 - `level0/` - Ejercicios nivel 0
@@ -249,7 +297,7 @@ make re     # Recompila
 
 ---
 
-## Compilación
+## 🛠️ Compilación
 
 Cada proyecto incluye su propio Makefile con las siguientes reglas comunes:
 
@@ -268,13 +316,59 @@ make norm   # Ejecuta norminette (minitalk)
 
 ---
 
-## Autor
+## 🎯 Habilidades Adquiridas
 
-**Mario García**
-- GitHub: [@Mariogarluu](https://github.com/Mariogarluu)
-- 42 Intra: marioga2
-- Escuela: 42 Málaga
+A lo largo de estos proyectos he desarrollado las siguientes habilidades:
+
+### 💡 Programación
+- **Lenguaje C:** Dominio avanzado de C, gestión de memoria, punteros y estructuras de datos
+- **Algoritmos:** Implementación de algoritmos de ordenación y optimización
+- **Debugging:** Uso de herramientas como GDB y Valgrind para debugging y detección de memory leaks
+
+### 🛠️ Herramientas y Sistemas
+- **Makefiles:** Creación y gestión de sistemas de compilación complejos
+- **Git:** Control de versiones y gestión de repositorios
+- **Linux/Unix:** Administración de sistemas, configuración de servicios y scripting Bash
+- **Virtualización:** Configuración y administración de máquinas virtuales
+
+### 🎨 Gráficos y Interfaces
+- **MiniLibX:** Programación gráfica básica en C
+- **Gestión de eventos:** Manejo de eventos de teclado y ventana
+
+### 🔧 Conceptos Avanzados
+- **Comunicación entre procesos:** Uso de señales UNIX (SIGUSR1, SIGUSR2)
+- **File Descriptors:** Gestión avanzada de lectura/escritura de archivos
+- **Parsing:** Análisis y validación de entrada de datos
 
 ---
 
-*Este repositorio es con fines educativos. Si eres estudiante de 42, te animo a que intentes resolver los proyectos por ti mismo antes de consultar estas soluciones.*
+## 👤 Autor
+
+<div align="center">
+
+**Mario García**
+
+[![GitHub](https://img.shields.io/badge/GitHub-Mariogarluu-181717?style=for-the-badge&logo=github)](https://github.com/Mariogarluu)
+[![42 Intra](https://img.shields.io/badge/42_Intra-marioga2-000000?style=for-the-badge&logo=42)](https://profile.intra.42.fr/users/marioga2)
+
+🏫 **42 Málaga** | 📧 marioga2@student.42malaga.com
+
+</div>
+
+---
+
+## 📄 Licencia
+
+Este repositorio es con fines **educativos**. 
+
+⚠️ **Importante para estudiantes de 42:** Si eres estudiante de 42, te animo encarecidamente a que intentes resolver los proyectos por ti mismo antes de consultar estas soluciones. El objetivo de 42 es aprender mediante la práctica y la resolución de problemas.
+
+---
+
+<div align="center">
+
+**⭐ Si este repositorio te ha sido útil, considera darle una estrella ⭐**
+
+Made with ❤️ at 42 Málaga
+
+</div>
