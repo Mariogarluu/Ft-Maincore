@@ -48,11 +48,11 @@ El programa de 42 es una **metodología de aprendizaje peer-to-peer** donde los 
 |----------|------------|--------|------------|
 | 📚 Libft | ⭐⭐ | ✅ Completado | 125/100 |
 | 🖨️ ft_printf | ⭐⭐ | ✅ Completado | 100/100 |
-| 📄 get_next_line | ⭐⭐ | ✅ Completado | 125/100 |
+| 📄 get_next_line | ⭐⭐ | ✅ Completado | 100/100 |
 | 🖥️ Born2beRoot | ⭐⭐ | ✅ Completado | 125/100 |
-| 🔄 push-swap | ⭐⭐⭐ | ✅ Completado | 125/100 |
-| 📡 minitalk | ⭐⭐ | ✅ Completado | 125/100 |
-| 🎮 so_long | ⭐⭐⭐ | ✅ Completado | 125/100 |
+| 🔄 push-swap | ⭐⭐⭐ | ✅ Completado | 100/100 |
+| 📡 minitalk | ⭐⭐ | ✅ Completado | 100/100 |
+| 🎮 so_long | ⭐⭐⭐ | ✅ Completado | 100/100 |
 | 📝 Exam 02 | ⭐⭐ | ✅ Completado | - |
 
 ---
@@ -121,7 +121,7 @@ make re     # Recompila
 
 **Directorio:** `get_next_line/`
 
-**Dificultad:** ⭐⭐ | **Puntuación:** 125/100
+**Dificultad:** ⭐⭐ | **Puntuación:** 100/100
 
 **Características:**
 - Lee de cualquier file descriptor
@@ -151,7 +151,7 @@ close(fd);
 
 **Directorio:** `Born2beRoot/`
 
-**Dificultad:** ⭐⭐ | **Puntuación:** 125/100
+**Dificultad:** ⭐⭐ | **Puntuación:** 100/100
 
 **Contenido:**
 - `monitoring.sh` - Script de monitorización del sistema
@@ -174,7 +174,7 @@ close(fd);
 
 **Directorio:** `push-swap/`
 
-**Dificultad:** ⭐⭐⭐ | **Puntuación:** 125/100
+**Dificultad:** ⭐⭐⭐ | **Puntuación:** 100/100
 
 **Operaciones disponibles:**
 - `sa`, `sb`, `ss` - Swap
@@ -210,7 +210,7 @@ ARG="4 67 3 87 23"; ./push_swap $ARG | ./checker_linux $ARG
 
 **Directorio:** `minitalk/`
 
-**Dificultad:** ⭐⭐ | **Puntuación:** 125/100
+**Dificultad:** ⭐⭐ | **Puntuación:** 100/100
 
 **Componentes:**
 - `server` - Servidor que recibe mensajes
@@ -243,7 +243,7 @@ make re     # Recompila
 
 **Directorio:** `so_long/`
 
-**Dificultad:** ⭐⭐⭐ | **Puntuación:** 125/100
+**Dificultad:** ⭐⭐⭐ | **Puntuación:** 100/100
 
 **Características:**
 - Juego de laberinto con vista top-down
